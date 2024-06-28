@@ -36,7 +36,7 @@ print("resp of 'C' Drive in % ---->",C_drive_storage_in_percent)
 
 
 # To 'C' Drive Storage reached 50% then send an Email:
-if C_drive_storage_in_percent == 50.0:
+if C_drive_storage_in_percent >= 50.0:
     html = f'''
         <html>
             <body>
@@ -75,7 +75,7 @@ else:
 
 
 # # To 'D' Drive Storage reached 40% then send an Email:
-# if D_drive_storage_in_percent == 40.0:
+# if D_drive_storage_in_percent >= 40.0:
 #     html = f'''
 #         <html>
 #             <body>

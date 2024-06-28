@@ -9,7 +9,7 @@ def get_cpu_usage_percent(interval=1):
 
 cpu_usage_in_percentage = get_cpu_usage_percent(interval=1)
 
-if cpu_usage_in_percentage == 80.0:
+if cpu_usage_in_percentage >= 80.0:
     html = f'''
         <html>
             <body>

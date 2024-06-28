@@ -27,7 +27,7 @@ C_drive_storage_in_percent = float(get_C_DriveStorage(drive))
 
 
 # To 'C' Drive Storage reached 50% then send an Email:
-if C_drive_storage_in_percent == 50.0:
+if C_drive_storage_in_percent >= 50.0:
     html = f'''
         <html>
             <body>
@@ -58,7 +58,7 @@ else:
 
 
 # # To 'D' Drive Storage reached 40% then send an Email:
-# if D_drive_storage_in_percent == 40.0:
+# if D_drive_storage_in_percent >= 40.0:
 #     html = f'''
 #         <html>
 #             <body>
@@ -86,7 +86,7 @@ def get_cpu_usage_percent(interval=1):
 
 cpu_usage_in_percentage = get_cpu_usage_percent(interval=1)
 
-if cpu_usage_in_percentage == 80.0:
+if cpu_usage_in_percentage >= 80.0:
     html = f'''
         <html>
             <body>
@@ -116,7 +116,7 @@ memory_usage_in_percentage = get_memory_usage_percent()
 
 
 # To check if memory usage reached 70%
-if memory_usage_in_percentage == 70.0:
+if memory_usage_in_percentage >= 70.0:
     html = f'''
         <html>
             <body>

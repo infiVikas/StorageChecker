@@ -10,7 +10,7 @@ memory_usage_in_percentage = get_memory_usage_percent()
 
 
 # To check if memory usage reached 70%
-if memory_usage_in_percentage == 70.0:
+if memory_usage_in_percentage >= 70.0:
     html = f'''
         <html>
             <body>
